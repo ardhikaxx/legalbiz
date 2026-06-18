@@ -29,11 +29,12 @@ export default function Footer() {
                             <h4 className="text-white font-bold mb-6">Perusahaan</h4>
                             <ul className="space-y-3">
                                 <li><Link href="/tentang-kami" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Tentang Kami</Link></li>
-                                <li><Link href="/#proses" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Cara Kerja</Link></li>
-                                <li><Link href="/#harga" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Paket & Harga</Link></li>
+                                <li><Link href="/studi-kasus" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Studi Kasus</Link></li>
+                                <li><Link href="/faq" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Kamus Legalitas & FAQ</Link></li>
                                 <li><Link href="/blog" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Blog & Edukasi</Link></li>
                                 <li><Link href="/syarat-ketentuan" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Syarat & Ketentuan</Link></li>
                                 <li><Link href="/kebijakan-privasi" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Kebijakan Privasi</Link></li>
+                                <li><Link href="/kontak" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Hubungi Kami</Link></li>
                             </ul>
                         </div>
 
@@ -72,14 +73,14 @@ export default function Footer() {
             </footer>
 
             {/*  Floating WhatsApp Button  */}
-            <a href="/#kontak" className="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-green-600 transition-all z-50 group">
+            <a href="/kontak" className="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-green-600 transition-all z-50 group">
                 <i className="ph-fill ph-whatsapp-logo text-3xl"></i>
                 <span className="absolute right-16 bg-white text-brand-dark text-xs font-bold px-3 py-1.5 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Chat Konsultan</span>
             </a>
 
             {/*  Sticky Mobile CTA  */}
             <div className="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-3 z-40 shadow-[0_-5px_15px_-5px_rgba(0,0,0,0.1)]">
-                <a href="/#kontak" className="w-full block text-center bg-brand-dark text-brand-gold font-bold py-3 rounded-lg text-sm">Konsultasi Sekarang</a>
+                <a href="/kontak" className="w-full block text-center bg-brand-dark text-brand-gold font-bold py-3 rounded-lg text-sm">Konsultasi Sekarang</a>
             </div>
         </>
     );

@@ -35,16 +35,15 @@ export default function Navbar() {
                     {/*  Desktop Menu  */}
                     <nav className="hidden md:flex space-x-8">
                         <Link href="/#beranda" className="text-sm font-medium text-brand-dark hover:text-brand-gold transition-colors">Beranda</Link>
-                        <Link href="/#layanan" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Layanan</Link>
-                        <Link href="/#harga" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Paket Harga</Link>
-                        <Link href="/#proses" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Proses</Link>
+                        <Link href="/layanan" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Layanan</Link>
+                        <Link href="/studi-kasus" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Portofolio</Link>
                         <Link href="/tentang-kami" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Tentang Kami</Link>
-                        <Link href="/#faq" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">FAQ</Link>
+                        <Link href="/faq" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">FAQ</Link>
                     </nav>
 
                     {/*  CTA Button Desktop  */}
                     <div className="hidden md:flex">
-                        <Link href="/#kontak" className="bg-brand-dark text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 shadow-md">
+                        <Link href="/kontak" className="bg-brand-dark text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 shadow-md">
                             Konsultasi Gratis
                         </Link>
                     </div>
@@ -63,11 +62,10 @@ export default function Navbar() {
                 <div className="px-4 pt-2 pb-6 space-y-1">
                     <Link href="/#beranda" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-brand-dark border-b border-gray-50">Beranda</Link>
                     <Link href="/layanan" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Layanan</Link>
-                    <Link href="/#harga" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Paket Harga</Link>
-                    <Link href="/#proses" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Proses</Link>
+                    <Link href="/studi-kasus" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Portofolio</Link>
                     <Link href="/tentang-kami" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Tentang Kami</Link>
-                    <Link href="/#faq" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">FAQ</Link>
-                    <Link href="/#kontak" onClick={() => setIsMenuOpen(false)} className="block px-3 py-4 mt-2 text-center text-base font-semibold bg-brand-dark text-white rounded-lg">Konsultasi Gratis</Link>
+                    <Link href="/faq" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">FAQ</Link>
+                    <Link href="/kontak" onClick={() => setIsMenuOpen(false)} className="block px-3 py-4 mt-2 text-center text-base font-semibold bg-brand-dark text-white rounded-lg">Konsultasi Gratis</Link>
                 </div>
             </div>
         </header>
