@@ -111,7 +111,7 @@ export default function Home() {
         </div>
     </header>
 
-    <section id="beranda" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-dark hero-pattern">
+    <section id="beranda" className="relative pt-28 pb-16 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-dark hero-pattern">
         {/*  Background Accents  */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-blue to-transparent opacity-50"></div>
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-gold rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
@@ -124,7 +124,7 @@ export default function Home() {
                         <i className="ph-fill ph-check-circle text-brand-gold"></i>
                         Partner Legalitas Terpercaya #1 di Indonesia
                     </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Pendirian PT & Izin Usaha <span className="text-brand-gold">Lebih Mudah</span>, Cepat, dan Aman.
                     </h1>
                     <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
@@ -198,7 +198,7 @@ export default function Home() {
         </div>
     </section>
 
-    <section id="layanan" className="py-24 bg-white">
+    <section id="layanan" className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                 <span className="text-brand-gold font-bold tracking-wider uppercase text-sm">Layanan Kami</span>
@@ -259,7 +259,7 @@ export default function Home() {
         </div>
     </section>
 
-    <section id="harga" className="py-24 bg-brand-gray">
+    <section id="harga" className="py-16 lg:py-24 bg-brand-gray">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                 <span className="text-brand-gold font-bold tracking-wider uppercase text-sm">Transparan & Terjangkau</span>
@@ -340,7 +340,7 @@ export default function Home() {
         </div>
     </section>
 
-    <section id="proses" className="py-24 bg-white">
+    <section id="proses" className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -562,7 +562,7 @@ export default function Home() {
         </div>
     </section>
 
-    <section id="faq" className="py-24 bg-white">
+    <section id="faq" className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-16">
             
             {/*  FAQ Section  */}
@@ -675,12 +675,12 @@ export default function Home() {
         </div>
     </section>
 
-    <section id="kontak" className="py-24 bg-white relative">
+    <section id="kontak" className="py-16 lg:py-24 bg-white relative">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="flex flex-col lg:flex-row gap-12 bg-white rounded-3xl shadow-premium overflow-hidden border border-gray-100">
                 
                 {/*  Contact Info & Map  */}
-                <div className="lg:w-2/5 bg-brand-dark p-10 text-white flex flex-col justify-between">
+                <div className="lg:w-2/5 bg-brand-dark p-8 md:p-10 text-white flex flex-col justify-between">
                     <div>
                         <h3 className="text-2xl font-bold mb-2">Hubungi Kami</h3>
                         <p className="text-gray-400 text-sm mb-8">Tim konsultan kami siap membantu menjawab semua pertanyaan Anda.</p>
@@ -727,7 +727,7 @@ export default function Home() {
                 </div>
 
                 {/*  Contact Form  */}
-                <div className="lg:w-3/5 p-10">
+                <div className="lg:w-3/5 p-8 md:p-10">
                     <h3 className="text-2xl font-bold text-brand-dark mb-6">Kirim Pesan</h3>
                     <form id="contact-form"  className="space-y-5" onSubmit={handleContact}>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
