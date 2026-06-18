@@ -98,7 +98,7 @@ export default function Home() {
         </div>
 
         {/*  Mobile Menu Panel  */}
-        <div id="mobile-menu" className={`hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg ${isMenuOpen ? "" : "hidden"}`}>
+        <div id="mobile-menu" className={`md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg ${isMenuOpen ? "" : "hidden"}`}>
             <div className="px-4 pt-2 pb-6 space-y-1">
                 <a href="#beranda" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-brand-dark border-b border-gray-50">Beranda</a>
                 <a href="#layanan" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Layanan</a>
