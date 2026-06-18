@@ -57,59 +57,7 @@ export default function Home() {
     };
 
     return (
-        <main className="font-sans text-brand-text bg-white antialiased">
-            
-
-    <header id="header" className={`fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm ${scrolled ? "shadow-md py-1" : "py-0"}`}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-20">
-                {/*  Logo  */}
-                <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-                    <div className="w-10 h-10 bg-brand-dark rounded-lg flex items-center justify-center">
-                        <i className="ph-fill ph-scales text-brand-gold text-2xl"></i>
-                    </div>
-                    <span className="font-bold text-2xl text-brand-dark tracking-tight">LegalBiz<span className="text-brand-gold">.</span></span>
-                </div>
-
-                {/*  Desktop Menu  */}
-                <nav className="hidden md:flex space-x-8">
-                    <a href="#beranda" className="text-sm font-medium text-brand-dark hover:text-brand-gold transition-colors">Beranda</a>
-                    <a href="#layanan" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Layanan</a>
-                    <a href="#harga" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Paket Harga</a>
-                    <a href="#proses" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Proses</a>
-                    <a href="#tentang" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">Tentang Kami</a>
-                    <a href="#faq" className="text-sm font-medium text-slate-600 hover:text-brand-gold transition-colors">FAQ</a>
-                </nav>
-
-                {/*  CTA Button Desktop  */}
-                <div className="hidden md:flex">
-                    <a href="#kontak" className="bg-brand-dark text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 shadow-md">
-                        Konsultasi Gratis
-                    </a>
-                </div>
-
-                {/*  Mobile menu button  */}
-                <div className="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" className="text-brand-dark hover:text-brand-gold focus:outline-none" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                        <i className="ph ph-list text-3xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        {/*  Mobile Menu Panel  */}
-        <div id="mobile-menu" className={`md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg ${isMenuOpen ? "" : "hidden"}`}>
-            <div className="px-4 pt-2 pb-6 space-y-1">
-                <a href="#beranda" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-brand-dark border-b border-gray-50">Beranda</a>
-                <a href="#layanan" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Layanan</a>
-                <a href="#harga" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Paket Harga</a>
-                <a href="#proses" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Proses</a>
-                <a href="#tentang" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Tentang Kami</a>
-                <a href="#faq" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">FAQ</a>
-                <a href="#kontak" onClick={() => setIsMenuOpen(false)} className="block px-3 py-4 mt-2 text-center text-base font-semibold bg-brand-dark text-white rounded-lg">Konsultasi Gratis</a>
-            </div>
-        </div>
-    </header>
+        <main className="flex-grow flex flex-col">
 
     <section id="beranda" className="relative pt-28 pb-16 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-dark hero-pattern">
         {/*  Background Accents  */}
@@ -776,83 +724,7 @@ export default function Home() {
         </div>
     </section>
 
-    <footer className="bg-brand-dark pt-16 pb-8 border-t border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-                
-                {/*  Brand Info  */}
-                <div className="lg:col-span-1">
-                    <div className="flex items-center gap-2 mb-6">
-                        <div className="w-8 h-8 bg-brand-gold rounded flex items-center justify-center">
-                            <i className="ph-fill ph-scales text-brand-dark text-xl"></i>
-                        </div>
-                        <span className="font-bold text-xl text-white tracking-tight">LegalBiz<span className="text-brand-gold">.</span></span>
-                    </div>
-                    <p className="text-gray-400 text-sm leading-relaxed mb-6">Partner terpercaya untuk pendirian perusahaan dan pengurusan legalitas bisnis di seluruh Indonesia. Cepat, aman, dan profesional.</p>
-                    <div className="flex gap-4">
-                        <a href="#" className="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-gray-400 hover:bg-brand-gold hover:text-brand-dark transition-colors"><i className="ph-fill ph-instagram-logo text-xl"></i></a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-gray-400 hover:bg-brand-gold hover:text-brand-dark transition-colors"><i className="ph-fill ph-linkedin-logo text-xl"></i></a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-gray-400 hover:bg-brand-gold hover:text-brand-dark transition-colors"><i className="ph-fill ph-facebook-logo text-xl"></i></a>
-                    </div>
-                </div>
-
-                {/*  Quick Links  */}
-                <div>
-                    <h4 className="text-white font-bold mb-6">Perusahaan</h4>
-                    <ul className="space-y-3">
-                        <li><a href="#tentang" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Tentang Kami</a></li>
-                        <li><a href="#proses" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Cara Kerja</a></li>
-                        <li><a href="#harga" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Paket & Harga</a></li>
-                        <li><a href="#" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Karir</a></li>
-                        <li><a href="#" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Syarat & Ketentuan</a></li>
-                        <li><a href="#" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Kebijakan Privasi</a></li>
-                    </ul>
-                </div>
-
-                {/*  Services Links  */}
-                <div>
-                    <h4 className="text-white font-bold mb-6">Layanan Populer</h4>
-                    <ul className="space-y-3">
-                        <li><a href="#" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Pendirian PT Umum</a></li>
-                        <li><a href="#" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Pendirian PT Perorangan</a></li>
-                        <li><a href="#" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Pembuatan CV</a></li>
-                        <li><a href="#" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Daftar Merek (HAKI)</a></li>
-                        <li><a href="#" className="text-gray-400 text-sm hover:text-brand-gold transition-colors">Pengurusan NIB & OSS</a></li>
-                    </ul>
-                </div>
-
-                {/*  Newsletter  */}
-                <div>
-                    <h4 className="text-white font-bold mb-6">Newsletter</h4>
-                    <p className="text-gray-400 text-sm mb-4">Dapatkan update regulasi bisnis terbaru dan penawaran khusus.</p>
-                    <form  className="flex gap-2">
-                        <input type="email" required placeholder="Email Anda" className="w-full bg-brand-blue border-none rounded-lg p-3 text-sm text-white focus:ring-1 focus:ring-brand-gold outline-none" />
-                        <button type="submit" className="bg-brand-gold text-brand-dark px-4 rounded-lg font-bold hover:bg-white transition-colors"><i className="ph-bold ph-paper-plane-right"></i></button>
-                    </form>
-                </div>
-
-            </div>
-
-            <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-                <p className="text-gray-500 text-sm">© 2026 LegalBiz Indonesia. All rights reserved.</p>
-                <div className="flex gap-4">
-                    <img src="https://placehold.co/80x30/1C2541/ffffff?text=Kemenkumham" alt="Badge" className="h-6 opacity-50 grayscale" />
-                    <img src="https://placehold.co/80x30/1C2541/ffffff?text=OSS+RBA" alt="Badge" className="h-6 opacity-50 grayscale" />
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    {/*  Floating WhatsApp Button  */}
-    <a href="#kontak" className="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-green-600 transition-all z-50 group">
-        <i className="ph-fill ph-whatsapp-logo text-3xl"></i>
-        <span className="absolute right-16 bg-white text-brand-dark text-xs font-bold px-3 py-1.5 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Chat Konsultan</span>
-    </a>
-
-    {/*  Sticky Mobile CTA  */}
-    <div className="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-3 z-40 shadow-[0_-5px_15px_-5px_rgba(0,0,0,0.1)]">
-        <a href="#kontak" className="w-full block text-center bg-brand-dark text-brand-gold font-bold py-3 rounded-lg text-sm">Konsultasi Sekarang</a>
-    </div>
+        {/* Content ends here */}
 
     
 
