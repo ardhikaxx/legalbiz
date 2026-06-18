@@ -100,13 +100,13 @@ export default function Home() {
         {/*  Mobile Menu Panel  */}
         <div id="mobile-menu" className={`hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg ${isMenuOpen ? "" : "hidden"}`}>
             <div className="px-4 pt-2 pb-6 space-y-1">
-                <a href="#beranda" className="block px-3 py-3 text-base font-medium text-brand-dark border-b border-gray-50">Beranda</a>
-                <a href="#layanan" className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Layanan</a>
-                <a href="#harga" className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Paket Harga</a>
-                <a href="#proses" className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Proses</a>
-                <a href="#tentang" className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Tentang Kami</a>
-                <a href="#faq" className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">FAQ</a>
-                <a href="#kontak" className="block px-3 py-4 mt-2 text-center text-base font-semibold bg-brand-dark text-white rounded-lg">Konsultasi Gratis</a>
+                <a href="#beranda" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-brand-dark border-b border-gray-50">Beranda</a>
+                <a href="#layanan" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Layanan</a>
+                <a href="#harga" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Paket Harga</a>
+                <a href="#proses" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Proses</a>
+                <a href="#tentang" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">Tentang Kami</a>
+                <a href="#faq" onClick={() => setIsMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-600 border-b border-gray-50">FAQ</a>
+                <a href="#kontak" onClick={() => setIsMenuOpen(false)} className="block px-3 py-4 mt-2 text-center text-base font-semibold bg-brand-dark text-white rounded-lg">Konsultasi Gratis</a>
             </div>
         </div>
     </header>
