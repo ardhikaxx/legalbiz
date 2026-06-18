@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TentangKami() {
     return (
-        <main className="flex-grow flex flex-col pt-24 pb-16 lg:pt-32 lg:pb-24">
+        <main className="flex-grow flex flex-col pt-24 pb-16 lg:pt-32 lg:pb-24 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto text-center mb-16">
                     <span className="text-brand-gold font-bold tracking-wider uppercase text-sm">Tentang LegalBiz</span>

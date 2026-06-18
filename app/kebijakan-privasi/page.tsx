@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function KebijakanPrivasi() {
     return (
-        <main className="flex-grow flex flex-col pt-24 pb-16 lg:pt-32 lg:pb-24">
+        <main className="flex-grow flex flex-col pt-24 pb-16 lg:pt-32 lg:pb-24 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <div className="text-center mb-12">
                     <h1 className="text-3xl md:text-5xl font-bold text-brand-dark mb-4">Kebijakan Privasi</h1>
